@@ -5,6 +5,6 @@ module.exports = {
         .setName('getlineup')
         .setDescription('Provides lineups'),
     async execute(interaction) {
-        await interaction.reply('This is a lineup');
+        await interaction.reply({ content: 'This is a lineup', ephemeral: true });
     },
 }

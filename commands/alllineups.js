@@ -6,29 +6,29 @@ module.exports = {
         .setName('alllineups')
         .setDescription('Provides all lineups'),
     async execute(interaction) {
-        const maps = new ActionRowBuilder()
+        const maps1 = new ActionRowBuilder()
         .addComponents(
-            new ButtonBuilder()
-                .setCustomId('Breeze')
-                .setLabel('Breeze')
-                .setStyle(ButtonStyle.Secondary),
-            new ButtonBuilder()
-                .setCustomId('Split')
-                .setLabel('Split')
-                .setStyle(ButtonStyle.Secondary),
-            new ButtonBuilder()
-                .setCustomId('Bind')
-                .setLabel('Bind')
-                .setStyle(ButtonStyle.Secondary),
-            new ButtonBuilder()
-                .setCustomId('Pearl')
-                .setLabel('Pearl')
-                .setStyle(ButtonStyle.Secondary),
             new ButtonBuilder()
                 .setCustomId('Ascent')
                 .setLabel('Ascent')
                 .setStyle(ButtonStyle.Primary),
+            new ButtonBuilder()
+                .setCustomId('Bind')
+                .setLabel('Bind')
+                .setStyle(ButtonStyle.Primary),
+            new ButtonBuilder()
+                .setCustomId('Breeze')
+                .setLabel('Breeze')
+                .setStyle(ButtonStyle.Primary),
+            new ButtonBuilder()
+                .setCustomId('Fracture')
+                .setLabel('Fracture')
+                .setStyle(ButtonStyle.Primary),
+            new ButtonBuilder()
+                .setCustomId('More')
+                .setLabel('More')
+                .setStyle(ButtonStyle.Secondary),
         );
-        await interaction.reply({ content: 'Which map?', components: [maps] });
+        await interaction.reply({ content: 'Which map?', ephemeral: true, components: [maps1] });      
     },
 }
