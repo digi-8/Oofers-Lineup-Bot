@@ -29,6 +29,8 @@ module.exports = {
                 .setLabel('More')
                 .setStyle(ButtonStyle.Secondary),
         );
-        await interaction.reply({ content: 'Which map?', ephemeral: true, components: [maps1] });      
+        await interaction.reply({ content: 'Which map?', ephemeral: true, components: [maps1] });  
+        
+        
     },
 }
