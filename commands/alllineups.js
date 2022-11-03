@@ -65,7 +65,7 @@ module.exports = {
                     await i.update({ content: 'Which Map?', ephemeral: true, components: [maps2] });
                 }
                 if (i.customId === 'Ascent') {
-                    await i.update({ content: 'This is Ascent', ephemeral: true, components: [] });
+                    await i.reply({ content: 'This is Ascent', ephemeral: true });
                 }
                 if (i.customId === 'Bind') {
                     await i.reply({ content: 'This is Bind', ephemeral: true });
